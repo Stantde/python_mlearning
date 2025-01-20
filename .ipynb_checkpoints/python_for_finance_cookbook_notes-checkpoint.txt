@@ -1,0 +1,6 @@
+Preface
+	* Link to download example code files:
+		- https://github.com/PacktPublishing/Python-for-Finance-Cookbook-2E
+		- https://github.com/PacktPublishing/ (for more stuff)
+		- https://packt.link/JnpTe   (color images)
+

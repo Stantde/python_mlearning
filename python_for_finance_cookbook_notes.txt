@@ -3,4 +3,32 @@ Preface
 		- https://github.com/PacktPublishing/Python-for-Finance-Cookbook-2E
 		- https://github.com/PacktPublishing/ (for more stuff)
 		- https://packt.link/JnpTe   (color images)
+	* Info about cells executed at the beginning of each chapter.
+
+I. Chapter 1: Acquiring Financial Data
+	* This is super important as the analysis can only be as good as the data supplied.
+	* Be sure to read the docs as vendors may include additional information.
+	* Data can come in the form of .csv, JSON, and pd dataframes. The goal is to prepare for data in any form.
+	A. Getting data from Yahoo Finance
+		* Beta - a measure of the volatility of an individual asset in comparison to the volatility of the entire market.
+		* We will use yfinance library.
+		* How to do it:
+			1. Import the libraries
+			2. Download the data
+			3. Inspect the downloaded data
+		* The result is a pd df with 2,769 rows of daily Open, High, Low, and Close (OHLC) prices, and the volume.
+		* Yahoo Finance automatically adjusts the close price for stock splits and dividends.	
+		1. How it works:
+			* Though straight-forward, there's a lot of extra functionality.
+			* Download multiple tickers at once by providing list of tickers.
+			* Download adjusted prices only.
+			* Download dividends and stock splits (inline).
+			* Disable progress bar.
+			* Download in different frequencies, even intraday.
+		2. There's more:
+			* yfinance offers an alternative for downloading data in the form of a ticker class.
+			* The advantage is that this class has more data. ....And it is fascinating...
+			* Additional methods: info, actions, major_holders, institutional_holders, calendar, earnings/quarterly_earnings, financials/quarterly_financials
+			* For a complete list, visit: https://github.com/ranaroussi/yfinance
+			* There are other libraries, too
 
