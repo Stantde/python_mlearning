@@ -1,1 +1,31 @@
+1. Start the SSH Agent
+The first step is to ensure the SSH agent is running. You can start the SSH agent with the following command:
+
+eval "$(ssh-agent -s)"
+This command initializes the SSH agent and sets the necessary environment variables.
+
+2. Add SSH Keys to the Agent
+Once the SSH agent is running, you need to add your SSH keys to it. Use the following command to add your default SSH key:
+
+ssh-add ~/.ssh/id_rsa
+If your key has a different name or location, replace ~/.ssh/id_rsa with the appropriate path.
+
+3. Ensure Proper Environment Variables
+Ensure that the environment variables SSH_AUTH_SOCK and SSH_AGENT_PID are set correctly. These variables are automatically set by ssh-agent, but you can verify them with:
+
+echo $SSH_AUTH_SOCK
+echo $SSH_AGENT_PID
+If these variables are empty or incorrect, re-run the command to start the SSH agent (eval "$(ssh-agent -s)").
+
+4. Automate SSH Agent Start and Key Addition
+To automate the process of starting the SSH agent and adding keys, you can add the following lines to your shell's configuration file (e.g., ~/.bashrc, ~/.zshrc):
+
+# Start the SSH agent
+eval "$(ssh-agent -s)"
+
+# Add SSH keys
+ssh-add ~/.ssh/id_rsa
+
+
+
 git push git@github.com:Stantde/python_mlearning.git
