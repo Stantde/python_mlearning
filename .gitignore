@@ -3,3 +3,4 @@ FFR/
 Securing_Jupyter_Server.txt
 data/
 PythonDataScienceHandbook/
+*.secret*

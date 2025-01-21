@@ -31,4 +31,6 @@ I. Chapter 1: Acquiring Financial Data
 			* Additional methods: info, actions, major_holders, institutional_holders, calendar, earnings/quarterly_earnings, financials/quarterly_financials
 			* For a complete list, visit: https://github.com/ranaroussi/yfinance
 			* There are other libraries, too
-
+	B. Getting data from Nasdaq Data Link
+		* Alternative data - anythning that is considered non-market data that reflects a campany's service performance.
+		* Alpha - a measure of performance describing an investments strategy's, trader's or portfolio manager's ability to beat the market.
